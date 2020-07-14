@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Get the current date</title>
+  </head>
+  <body>
+       <h1>Get the current date</h1>
+<p>Current date is <span class="output"></span> </p>
+<p> <span class="secondoutput"></span> </p>
+       <button type="button" onclick="getCurrentDate()">Get Current date - Click me!</button>
+       <script type="text/javascript">
+        function getCurrentDate(){
+            
+            let dateObj = new Date(); 
+            let month = String(dateObj.getMonth() + 1).padStart(2, '0'); 
+            let day = String(dateObj.getDate()).padStart(2, '0'); 
+            let year = dateObj.getFullYear(); 
+            let output = day + '/' + month + '/' + year; 
+            let secondoutput = day + ':' + month + ':' + year; 
+             document.querySelector('.output').textContent = output;
+             document.querySelector('.secondoutput').textContent = secondoutput;
+            }
+             </script>
+  </body>
+
+</html>
