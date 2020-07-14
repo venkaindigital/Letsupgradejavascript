@@ -15,7 +15,7 @@
             let day = String(dateObj.getDate()).padStart(2, '0'); 
             let year = dateObj.getFullYear(); 
             let output = day + '/' + month + '/' + year; 
-            let secondoutput = day + ':' + month + ':' + year; 
+            let secondoutput = day + '-' + month + '-' + year; 
              document.querySelector('.output').textContent = output;
              document.querySelector('.secondoutput').textContent = secondoutput;
             }
